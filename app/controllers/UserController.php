@@ -67,7 +67,12 @@ class UserController extends BaseController {
 		return Redirect::to('login');
 	}
 
-
+        
+        public function show_members()
+	{
+		$u = User::all();
+		return $u;
+	}
 
 
 

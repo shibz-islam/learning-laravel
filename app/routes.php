@@ -17,8 +17,7 @@ Route::get('admin', function()
 	
 })->before('auth');
 
-Route::get('/', 'HomeController@showHomepage');
-Route::get('members','HomeController@show_members');
+Route::get('members','UserController@show_members');
 Route::resource('sessions','SessionsController');
 
 
