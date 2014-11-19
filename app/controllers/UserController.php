@@ -26,25 +26,25 @@ class UserController extends BaseController {
         $u->password = Hash::make(Input::get('password'));
         $u->save();
 
-                $data = [ 'user' => $u ];
-                Mail::send('emails.new_mail', $data, function($message) use($u){               
-                    $message->to($u->email,$u->name)->subject("Welcome to Xero!!(Demo)");
-                });
-//        $body = View::make('emails.new_mail');
-//        // setting the server, port and encryption
-//        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
-//                ->setUsername('developersdextrous@gmail.com')
-//                ->setPassword('Ebitgroup2');
-//
-//        // creating the Swift_Mailer instance and pass the config settings
-//        $mailer = Swift_Mailer::newInstance($transport);
-//
-//        // configuring the Swift mail instance with all details
-//        $message = Swift_Message::newInstance('Xero Demo')
-//                ->setFrom(array('developersdextrous@gmail.com' => 'Dextrous Team'))
-//                ->setTo(array($u->email => $u->first_name))
-//                ->setBody($body, 'text/html');
-//        $mailer->send($message);
+//                $data = [ 'user' => $u ];
+//                Mail::send('emails.new_mail', $data, function($message) use($u){               
+//                    $message->to($u->email,$u->name)->subject("Welcome to Xero!!(Demo)");
+//                });
+        $body = View::make('emails.new_mail');
+        // setting the server, port and encryption
+        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
+                ->setUsername('developersdextrous@gmail.com')
+                ->setPassword('Ebitgroup2');
+
+        // creating the Swift_Mailer instance and pass the config settings
+        $mailer = Swift_Mailer::newInstance($transport);
+
+        // configuring the Swift mail instance with all details
+        $message = Swift_Message::newInstance('Xero Demo')
+                ->setFrom(array('developersdextrous@gmail.com' => 'Dextrous Team'))
+                ->setTo(array($u->email => $u->first_name))
+                ->setBody($body, 'text/html');
+        $mailer->send($message);
 
         return User::all();
     }
