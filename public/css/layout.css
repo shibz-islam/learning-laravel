@@ -1,0 +1,95 @@
+
+
+.montage_image {
+	position: relative;
+	margin-left: -16%;
+}
+
+.laptop .laptop_img {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/*background-image: url('sprite-montage.png');*/
+	background-size: 1036px 273px;
+	z-index: 1;
+	margin-left: 18%;
+	width: 50%;
+	/*height: 273px;*/
+}
+
+.phone .phone_img {
+	background-repeat: no-repeat;
+	background-position: -928px 0;
+	/*background-image: url('sprite-montage.png');*/
+	background-size: 1036px 273px;
+	z-index: 3;
+	margin-left: -40%;
+	margin-top: 21%;
+	/*width: 107px;*/
+	/*height: 208px;*/
+}
+
+.tablet .tablet_img {
+	background-repeat: no-repeat;
+	background-position: -544px 0;
+	/*background-image: url('sprite-montage.png');*/
+	background-size: 1036px 273px;
+	z-index: 2;
+	margin-left: -13%;
+	margin-top: 10%;
+	width: 35%;
+	/*height: 232px;*/
+}
+
+#myCanvas1 {
+	/*width: 18%;*/
+	/*margin-left: 60%;*/
+	margin-top: -25%;
+}
+
+#myCanvas2 {
+	/*width: 18%;*/
+	margin-left: 28%;
+	margin-top: -25%;
+}
+
+.vr {
+    width:.1%;
+    background-color:#000;
+    position:absolute;
+    top:93%;
+    margin-bottom:10%;
+    left:55%;
+    height: 10%;
+}
+
+.link1 h5 {
+	text-align: center;
+	font-size: 16px;
+}
+
+.link2 h5 {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10%;
+	margin-left: -5%;
+}
+
+.link3 h5 {
+	text-align: center;
+	font-size: 16px;
+	margin-left: -5%;
+}
+
+.link1, .link2, .link3 {
+	color: #fff;
+	/*font-size: 16px;*/
+}
+
+.link1:hover, .link2:hover, .link3:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.link1 p, .link2 p, .link3 p {
+	text-align: center;
+}

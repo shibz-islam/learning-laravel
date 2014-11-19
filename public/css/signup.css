@@ -1,0 +1,66 @@
+body{
+	text-align: center;
+	background-color: #1ec0e7;	
+}
+.signup_heading{
+	color: #fff;
+}
+.signup_heading h2,h4{
+  text-align: center;
+  color: #fff;
+}
+.signup_heading{
+  margin-top: 5%;
+}
+.signup_form{
+  box-sizing: border-box;
+  max-width: 405px;
+  padding: 32px;
+  margin: auto;
+  border-radius: 6px;
+  background: #f2f2f2;
+  color: #0d5269;
+  margin-top: 10%;
+}
+.signup_btn{
+  border-radius: 2em;
+  margin-top: 3%;
+  text-transform: uppercase;
+}
+.checkbox a{
+	text-decoration: none;
+	color: #00a3d3;
+}
+.checkbox a:hover{
+	color: #017095;
+}
+.register_option{
+  margin-top: 4%;
+}
+.register_option p{
+  text-align: center;
+  color: #fff;
+}
+.register_option a{
+  text-decoration: none;
+  color: #405056;
+}
+.register_option a:hover{
+  color: #446c75;
+}
+.heading_logo{
+	margin-top: 7%;
+}
+.heading_logo .logo{
+	 width: 50px;
+	  height: 50px;
+	  padding: 12px 4px;
+	  font-size: 18px;
+	  line-height: 1.33;
+	  border-radius: 25px; 
+	  color: #00a3d3;
+	  font-family: cursive;
+}
+select:hover{
+	cursor: pointer;
+}

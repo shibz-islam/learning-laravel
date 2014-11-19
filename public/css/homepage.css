@@ -1,0 +1,459 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .carousel-caption {
+  right: 20%;
+  left: 20%;
+  padding-bottom: 60px;
+  }
+}
+
+/* Navbar Header */
+.navbar-header .navbar-text{
+    color: white;
+    font-style: bold;
+}
+
+/* navbar-collapse */
+.navbar-nav>li>a{
+  color:#95DFF1;
+}
+.navbar-nav>li>a:hover{
+  background: none;
+  color: #fff;
+}
+.navbar-nav>li>.dropdown-menu{
+  border-radius: 5px;
+  background: #36383f;
+}
+.navbar-nav .dropdown>a:hover{
+  background: none;
+}
+.dropdown-menu>li>a{
+  color: #dddee1;
+}
+.dropdown-menu>li>a:hover{
+  background: none;
+  color: #fff;
+}
+
+/* Background Header*/
+
+  .header_title h2{
+      color: #fff;
+  }
+  .header_text{
+    margin-top: 20px;
+    text-shadow: none;
+
+  }
+  .header_text a{
+    font-size: 16px;
+    color:#95DFF1;
+  }
+
+  .header_text a:hover{
+    color: #00a3d3;
+    text-decoration: none;
+  }
+  .header_find_out a{
+    color: #fff;
+    text-shadow: none;
+    font-size: 14px;
+  }
+  .header_find_out a:hover{
+    color: #95DFF1;
+    text-decoration: none;
+  }
+
+  .header_btn{
+    background: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.2);
+    color: #00b7e3;
+    text-shadow: none;
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 188px;
+    padding: .45em 0 .3em;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    border-radius: 3em;
+    font-size: 16px;
+  }
+
+  .header_button a:hover{
+    background: transparent;
+    color: #00a3d3;
+  }
+
+  .header_button{
+    margin-top: 20px;
+  }
+ 
+
+
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+/* Arrow Bounce */
+
+.bar {
+  position:fixed;
+}
+.bounce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+  -webkit-animation:bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%{
+    bottom:5px;
+  }
+  
+  25%, 75% {
+    bottom:15px;
+  }
+  
+  50% {
+    bottom:20px;
+  }
+  
+  100% {
+    bottom:0;
+  }
+}
+.section_des_1{
+  background: #ebebeb;
+  margin-top: -60px;
+  padding-top: 30px;
+ }
+ #real_time_1{
+  color: #323439;
+  text-align: center;
+ }
+#real_time_2{
+  margin-top: 30px;
+  margin-bottom: -20px;
+  text-align: center;
+  color: #989EA6;
+}
+.montage{
+  background: #13b5ea;
+  color: #fff;
+}
+.credibility_seals{
+  background: #12ABDE;
+  color: #fff;
+}
+.section_des_2{
+  padding-top: 35px;
+}
+#popular_features_1{
+  color: #323439;
+  text-align: center;
+}
+#popular_features_2{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 8%;
+  color: #989EA6;
+  text-align: center;
+}
+
+.feature_list a{
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAQGU/a4AAAAKSURBVHgBY2gAAACCAIFMF9ffAAAAAElFTkSuQmCC);
+  display: inline-block;
+  padding: 5px;
+  height: 180px;
+  width: 255px;
+  z-index: 9;
+  position: relative;
+  margin-left: 35px;
+}
+.feature_list a:hover{
+  text-decoration: none;
+  background: #ecf4fe;
+  border-radius: 10px;
+  transition: background .2s,color .2s;
+}
+.feature{
+  text-align: center;
+}
+.feature h4,h2{
+  color: #00a3d3;
+}
+.feature p{
+  color: #989EA6;
+}
+
+.more_features_btn{
+  display: inline-block;
+  padding: 0.55em 2em 0.4em;
+  margin-top: 50px;
+  margin-left: -20px;
+  border: 2px solid #1EC0E7;
+  border-radius: 2em;
+  color: #1EC0E7;
+  text-transform: uppercase;
+}
+.more_features a:hover{
+    background: transparent;
+    color: #00a3d3;
+    text-decoration: none;
+    border-color:  #00a3d3;
+}
+
+.customer_story{
+  margin-top: 3%;
+  position: relative;
+  background: none repeat scroll 0% 0% #45474D;
+}
+.customer_story_heading{
+  text-align: center;
+  margin-top: 10%;
+}
+.customer_story_heading h2{
+  color: #fff;
+}
+.customer_story_heading h4{
+  color: #AAB1B7;
+}
+.customer_list{
+  margin-top: 5%;
+}
+.customer a{
+  text-decoration: none;
+}
+.customer_list .thumbnail{
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2px;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #008dad;
+  background-color: #008dad;
+}
+.customer_name{
+  text-align: center;
+  color: #fff;
+  margin-top: 5%;
+}
+.customer_business{
+  text-align: center; 
+  color: #AAB1B7; 
+}
+.customer_content{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.customer_content a{
+  text-decoration: none;
+}
+.customer_content h4{
+  text-align: center;
+}
+.twitter_link a{
+  color: #666;
+}
+.twitter_link a:hover{
+  color: #989EA6;
+}
+.customer_comment h4{
+  color: #fff;
+}
+.more_customer_btn{
+  display: inline-block;
+  padding: .55em 2em .4em;
+  margin-top: 50px;
+  border: 2px solid #1ec0e7;
+  border-radius: 2em;
+  color: #1ec0e7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.more_customer_btn:hover {
+  border-color: #128ba7;
+  color: #128ba7;
+}
+.more_customer{
+  text-align: center;
+}
+.signup{
+  background-color: #1ec0e7;
+  padding-bottom: 3%;
+}
+.signup_heading h2,h4{
+  text-align: center;
+  color: #fff;
+}
+.signup_heading{
+  margin-top: 10%;
+}
+.signup_form{
+  box-sizing: border-box;
+  max-width: 405px;
+  padding: 32px;
+  margin: auto;
+  border-radius: 6px;
+  background: #26b0d7;
+  color: #0d5269;
+  margin-top: 10%;
+}
+.signup_btn{
+  box-shadow: none;
+  color: #1fc0e7;
+  font-size: 18px;
+  text-shadow: none;
+  text-transform: uppercase;
+  border-radius: 2em;
+  margin-top: 3%;
+  background: #fff;
+  opacity: .8;
+}
+.signup_btn:hover{
+  color: #128ba7;
+}
+.register_option{
+  margin-top: 4%;
+}
+.register_option p{
+  text-align: center;
+  color: #fff;
+}
+.register_option a{
+  text-decoration: none;
+  color: #208399;
+}
+.register_option a:hover{
+  color: #446c75;
+}
+
+#xero1, #xero2, #xero3{
+  text-align: center;
+}
